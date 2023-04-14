@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Natuspa - Beauty Salon & Spa Template</title>
+    <link rel="stylesheet" href="./resource/css/style.css">
+    <link rel="stylesheet" href="./resource/css/home-two.css">
+    <link rel="stylesheet" href="./resource/css/queries.css">
+    <link rel="stylesheet" href="./resource/css/queries-home-two.css">
+    <link rel="stylesheet" href="./resource/css/animation.css">
+    <link rel="stylesheet" href="./vendor/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./vendor/fonts/fontawesome-5.0.13/css/all.css">
+    <link rel="stylesheet" href="./vendor/fonts/natuspa-font/css/natuspa-icons.css">
+    <link rel="stylesheet" href="./vendor/js/slick/slick.css">
+    <link rel="stylesheet" href="./vendor/js/slick/slick-theme.css">
+    <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" /> -->
+    <link rel="stylesheet" href="./vendor/js/datetimepicker-master/jquery.datetimepicker.css">
+    <link rel="stylesheet" href="./vendor/js/Magnific-Popup-master/magnific-popup.css">
+    <!-- favicons -->
+    <link rel="apple-touch-icon" sizes="76x76" href="/resource/favicons-2/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/resource/favicons-2/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/resource/favicons-2/favicon-16x16.png">
+    <link rel="manifest" href="/resource/favicons-2/site.webmanifest">
+    <link rel="mask-icon" href="/resource/favicons-2/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/resource/favicons-2/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="/resource/favicons-2/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body class="preload">
+
+    <!-- Loading ......... -->
+    <div class="loader" id="loader">
+        <div class="loader-inner">
+            <img src="./imgs/loader-2.svg" alt="Loader" class="loader-img">
+        </div>
+    </div>
+
+    <!-- overlay for focus -->
+    <div id="overlay" style="display: none;"></div>
+
+    <!-- scroll top -->
+    <a class="scroll-top link-text" href="#home">Top</a>
+
+    <!-- page wrapper -->
+    <div class="page-wrapper">
+        <!-- Header -->
+        <header id="home">
+            <!-- Navigation -->
+            <nav class="navbar navbar-expand-xl navbar-dark">
+                <!-- logo site -->
+                <a class="navbar-brand main-logo" href="index.html" rel="home" title="Natuspa">
+                    <img src="./imgs/logo_white.png" alt="Natuspa Logo" width="193" height="76">
+                </a>
+                <!--  main nav -->
+                <button class="navbar-toggler mobile-nav-icon" type="button" data-toggle="collapse"
+                    data-target="#main-nav-mobile">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse main-nav">
+                    <ul class="navbar-nav menu" id="mainNav">
+                        <li class="nav-item menu-item menu-item-current menu-item-has-child">
+                            <a class="nav-link">Home</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="index.html">Home One</a>
+                                </li>
+                                <li>
+                                    <a href="#home">Home Two</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item menu-item">
+                            <a class="nav-link" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item menu-item">
+                            <a class="nav-link" href="contact-us.html">Contact</a>
+                        </li>
+                        <li class="nav-item menu-item menu-item-has-child">
+                            <a class="nav-link" href="#">News</a>
+                            <ul class="sub-menu">
+                                <li><a href="page-blog.html">Blog Grid</a></li>
+                                <li><a href="page-blog-details.html">Blog Details</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item menu-item">
+                            <a class="nav-link" href="page-pricing.html">Pricing</a>
+                        </li>
+                        <li class="nav-item menu-item">
+                            <a class="nav-link" href="about-us.html">About Us</a>
+                        </li>
+                        <li class="nav-item menu-item menu-item-has-child">
+                            <a class="nav-link" href="#">Pages</a>
+                            <ul class="sub-menu">
+                                <li><a href="page-404.html">Error Page</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- nav icon -->
+                <div class="main-nav-icon">
+                    <!-- search -->
+                    <a class="search-button">
+                        <span class="search-icon nav-icon"><i class="fal fa-search"></i></span>
+                    </a>
+                    <div class="search-form">
+                        <span class="close-search"><i class="fal fa-times-circle"></i></span>
+                        <form class="search-input" action="#">
+                            <input type="text" name="search" id="searchForm" placeholder="Type and hit enter..."
+                                autocomplete="off">
+                        </form>
+                    </div>
+                    <!-- shopping bag -->
+                    <a class="bag-button">
+                        <span class="bag-icon nav-icon">
+                            <i class="fal fa-shopping-bag"><span class="badge badge-danger">2</span></i>
+                        </span>
+                        <div class="shop-cart">
+                            <div class="shop-cart-item">
+                                <img src="./imgs/products/product-1.jpg" alt="product-1">
+                                <p class="product-info">
+                                    The Ordinary Coverage Foundation<br>
+                                    <span class="quantity">1 ×
+                                        <span class="amount">$<span class="price">215.00</span></span>
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="shop-cart-item">
+                                <img src="./imgs/products/product-2.jpg" alt="product-2">
+                                <p class="product-info">
+                                    SkinStore Holiday Collection<br>
+                                    <span class="quantity">5 ×
+                                        <span class="amount">$<span class="price">75.99</span></span>
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="shop-cart-total">
+                                <strong>Subtotal: </strong><span>$594.95</span>
+                            </div>
+                            <div class="shop-cart-button">
+                                <a href="#" class="btn view-btn">view cart</a>
+                                <a href="#" class="btn checkout-btn">checkout</a>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- bars icon -->
+                    <a class="slide-icon">
+                        <span class="bars-icon nav-icon"><i class="fal fa-bars"></i></span>
+                    </a>
+                </div>
+            </nav>
+            <!-- menu popup -->
+            <div class="menu-popup">
+                <span class="close-icon"><i class="fal fa-times"></i></span>
+                <div class="content-wrap">
+                    <h1 class="title">Natuspa</h1>
+                    <p class="text">
+                        For us, it’s been about a journey, not a race to build a legacy and reputation of being the
+                        best,
+                        delivering the best and creating a Natuspa culture that we are proud of each and every day.
+                    </p>
+                    <span class="menu-popup-img"><img src="./imgs/summer-sale.jpg" alt="Sale"></span>
+                    <div class="contact-popup-info">
+                        <h2 class="title">Contact Us</h2>
+                        <div class="address">
+                            <span>145 Franklin St, Redpoint Eval</span>
+                        </div>
+                        <div class="email">
+                            <span>Natuspa@email-themes.com</span>
+                        </div>
+                        <div class="phone">
+                            <span>+84 933 1235 113</span>
+                        </div>
+                        <div class="social-media-icons">
+                            <div class="social-media">
+                                <a class="social-popup-icon" target="_blank" href="#"><i
+                                        class="fab fa-linkedin-in"></i></a>
+                            </div>
+                            <div class="social-media">
+                                <a class="social-popup-icon" target="_blank" href="https://fb.com/Tuannguyentn2504"><i
+                                        class="fab fa-facebook-f"></i></a>
+                            </div>
+                            <div class="social-media">
+                                <a class="social-popup-icon" target="_blank" href="#"><i
+                                        class="fab fa-twitter"></i></i></a>
+                            </div>
+                            <div class="social-media">
+                                <a class="social-popup-icon" target="_blank" href="#"><i
+                                        class="fab fa-google-plus-g"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- slides -->
+            <div class="slide-wrap">
+                <div class="slide-inner">
+                    <div class="slide-item active">
+                        <img src="./imgs/slide_6.jpg" alt="slide one">
+                        <div class="slide-text">
+                            <h3>Welcome to Natuspa !</h3>
+                            <h1>BE YOUR BEST</h1>
+                            <p>Enter a relaxing atmosphere of comfort. Natuspa is a peaceful refuge from your
+                                complicated
+                                and
+                                high stress lifestyle. leave feeling refreshed, beautiful, and more relaxed than ever.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <img src="./imgs/slide_4.jpg" alt="slide two">
+                        <div class="slide-text" style="text-align: left;">
+                            <h3>Welcome to Natuspa !</h3>
+                            <h1>BE YOUR BEST</h1>
+                            <p>You deserve a break. discover again what it means to be at ease, feel better & enjoy the
+                                long
+                                lasting benefits of the spavia experience.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <img src="./imgs/slide_6.jpg" alt="slide three">
+                        <div class="slide-text" style="text-align: right;">
+                            <h3>Welcome to Natuspa !</h3>
+                            <h1>BE YOUR BEST</h1>
+                            <p>set aside the chaos of your daily routines and make time for yourself let the spavia team
+                                recharge and refocus your body and mind.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <ul class="slider-control">
+                <li class="control-btn">
+                    <a href="#" id="prev"><i class="fal fa-chevron-left"></i></a>
+                    <a href="#" id="next"><i class="fal fa-chevron-right"></i></a>
+                </li>
+                <li class="make-appointmnet">
+                    <span>Make appointment</span>
+                    <a href="#appointments"><i class="fal fa-chevron-right"
+                            style="transform: rotate(90deg); border: 2px solid #eee;"></i></a>
+                </li>
+                <li class="slider-index">03/ <span>3</span> </li>
+            </ul>
+        </header>
+
+        <!-- about-section -->
+        <div class="about-section container" id="about">
+            <div class="spacer-clearfix" style="height: 90px;"></div>
+            <div class="inner">
+                <div class="row">
+                    <div class="main-content col-md-12">
+                        <div class="row">
+                            <div class="images has-bg-1 video-box col-sn-12 col-md-4">
+
+                            </div>
+                            <div class="about-main-text col-sn-12 col-md-8">
+                                <h2 class="section-title">History of Natuspa!</h2>
+                                <p class="text-box">
+                                    September 25, 2005, Natuspa opened its doors with a mission and vision of making a
+                                    positive difference in the world one guest at a time and delivering an exceptional
+                                    experience our guests couldn’t live without. for us, it’s been about a journey..
+                                </p>
+                                <a class="link-text text-linear-effect">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-content col-md-12">
+                        <div class="row">
+                            <div class="images has-bg-2 video-box col-sn-12 col-md-4">
+                            </div>
+                            <div class="about-main-text col-sn-12 col-md-8">
+                                <h2 class="section-title">Making a positive difference !</h2>
+                                <p class="text-box">
+                                    September 25, 2005, Natuspa opened its doors with a mission and vision of making a
+                                    positive difference in the world one guest at a time and delivering an exceptional
+                                    experience our guests couldn’t live without. for us, it’s been about a journey..
+                                </p>
+                                <a class="link-text text-linear-effect">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="spacer-clearfix" style="height: 100px;"></div>
+        </div>
+
+        <!-- pricing plan -->
+        <div class="pricing-plan-wrapper container-fluid">
+            <div class="pricing-plan container">
+                <div class="spacer-clearfix" style="height: 80px;"></div>
+                <div class="row">
+                    <div class="heading col-12">
+                        <div class="main-heading section-title">pricing plan</div>
+                        <div class="sub-heading">
+                            <p>Welcome to the Natuspa Day Med Spa! A wellness luxury spa centerdedicatedto inspiring
+                                Life in
+                                Balance.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="spacer-clearfix" style="height: 40px;"></div>
+                    <ul class="pricing-menu col-12">
+                        <li class="pricing-item all facial massage">
+                            <span class="logo"><i class="natuspa-icon-oil"></i></span>
+                            <div class="heading">
+                                <h4>Swedish Massage</h4>
+                                <div class="description">Lorem ipsum dolor sit amet ...</div>
+                            </div>
+                            <span class="price">$93.55</span>
+                        </li>
+                        <li class="pricing-item all massage treatments">
+                            <span class=" logo"><i class="natuspa-icon-stone"></i></span>
+                            <div class="heading">
+                                <h4>Massage Stone</h4>
+                                <div class="description">Lorem ipsum dolor sit amet ...</div>
+                            </div>
+                            <span class="price">$99.99</span>
+                        </li>
+                        <li class="pricing-item all nail treatments waxing">
+                            <span class="logo"><i class="natuspa-icon-polish"></i></span>
+                            <div class="heading">
+                                <h4>Nail Care</h4>
+                                <div class="description">Lorem ipsum dolor sit amet ...</div>
+                            </div>
+                            <span class="price">$25.95</span>
+                        </li>
+                        <li class="pricing-item all treatments massage">
+                            <span class="logo"><i class="natuspa-icon-massage-1"></i></span>
+                            <div class="heading">
+                                <h4>Body Treatments</h4>
+                                <div class="description">Lorem ipsum dolor sit amet ...</div>
+                            </div>
+                            <span class="price">$105.5</span>
+                        </li>
+                        <li class="pricing-item all facial waxing nail">
+                            <span class="logo"><i class="natuspa-icon-cramp"></i></span>
+                            <div class="heading">
+                                <h4>Vein Sclerotherapy</h4>
+                                <div class="description">Lorem ipsum dolor sit amet ...</div>
+                            </div>
+                            <span class="price">$73.95</span>
+                        </li>
+                        <li class="pricing-item all facial massage">
+                            <span class="logo"><i class="natuspa-icon-facial-treatment"></i></span>
+                            <div class="heading">
+                                <h4>Derm Young Facial</h4>
+                                <div class="description">Lorem ipsum dolor sit amet ...</div>
+                            </div>
+                            <span class="price">$63.35</span>
+                        </li>
+                        <li class="pricing-item all waxing">
+                            <span class="logo"><i class="natuspa-icon-depilation"></i></span>
+                            <div class="heading">
+                                <h4>Natural Waxing</h4>
+                                <div class="description">Lorem ipsum dolor sit amet ...</div>
+                            </div>
+                            <span class="price">$55.95</span>
+                        </li>
+                        <li class="pricing-item all treatments">
+                            <span class="logo"><i class="natuspa-icon-spa-1"></i></span>
+                            <div class="heading">
+                                <h4>Express Treatments</h4>
+                                <div class="description">Lorem ipsum dolor sit amet ...</div>
+                            </div>
+                            <span class="price">$83.55</span>
+                        </li>
+                    </ul>
+                    <span id="filter-option"></span>
+                </div>
+                <div class="spacer-clearfix" style="height: 60px;"></div>
+            </div>
+        </div>
+
+        <!-- service section -->
+        <div class="services-section container" id="services">
+            <div class="row">
+                <div class="spacer-clearfix" style="height: 80px;"></div>
+                <div class="services-info col-md-12">
+                    <h2 class="section-title">our best services</h2>
+                    <p class="services-main-text">Natuspa is a full service salon with experts in body services, nail
+                        care,
+                        massage, waxing, skin care, and other treatments.
+                    </p>
+                </div>
+                <div class="service col-md-12 col-lg-3">
+                    <div class="services-icon-wrap">
+                        <i class="natuspa-icon-facial-treatment"></i>
+                    </div>
+                    <div class="heading text-linear-effect">Derm Young Facial</div>
+                    <div class="spacer-clearfix" style="height: 50px;"></div>
+                </div>
+                <div class="service col-md-12 col-lg-3">
+                    <div class="services-icon-wrap">
+                        <i class="natuspa-icon-depilation"></i>
+                    </div>
+                    <div class="heading text-linear-effect">Natural Waxing</div>
+                    <div class="spacer-clearfix" style="height: 50px;"></div>
+                </div>
+                <div class="service col-md-12 col-lg-3">
+                    <div class="services-icon-wrap">
+                        <i class="natuspa-icon-massage-1"></i>
+                    </div>
+                    <div class="heading text-linear-effect">Signature Massage</div>
+                    <div class="spacer-clearfix" style="height: 50px;"></div>
+                </div>
+                <div class="service col-md-12 col-lg-3">
+                    <div class="services-icon-wrap">
+                        <i class="natuspa-icon-herbal"></i>
+                    </div>
+                    <div class="heading text-linear-effect">Body Treatments</div>
+                    <div class="spacer-clearfix" style="height: 50px;"></div>
+                </div>
+                <div class="service col-md-12 col-lg-3">
+                    <div class="services-icon-wrap">
+                        <i class="natuspa-icon-polish"></i>
+                    </div>
+                    <div class="heading text-linear-effect">Natural Nails Care</div>
+                    <div class="spacer-clearfix" style="height: 50px;"></div>
+                </div>
+                <div class="service col-md-12 col-lg-3">
+                    <div class="services-icon-wrap">
+                        <i class="natuspa-icon-stone"></i>
+                    </div>
+                    <div class="heading text-linear-effect">Hot Stone Massage</div>
+                    <div class="spacer-clearfix" style="height: 50px;"></div>
+                </div>
+                <div class="service col-md-12 col-lg-3">
+                    <div class="services-icon-wrap">
+                        <i class="natuspa-icon-oil"></i>
+                    </div>
+                    <div class="heading text-linear-effect">Swedish Massage</div>
+                    <div class="spacer-clearfix" style="height: 50px;"></div>
+                </div>
+                <div class="service col-md-12 col-lg-3">
+                    <div class="services-icon-wrap">
+                        <i class="natuspa-icon-cramp"></i>
+                    </div>
+                    <div class="heading text-linear-effect">Vein Sclerotherapy</div>
+                    <div class="spacer-clearfix" style="height: 50px;"></div>
+                </div>
+                <div class="spacer-clearfix" style="height: 40px;"></div>
+            </div>
+        </div>
+
+        <!-- collection section -->
+        <div class="collection">
+            <a href="./imgs/collection/gallery-1.jpg" class="collect-item">
+                <img src="./imgs/collection/gallery-1.jpg" alt="Gallery-1" class="collect-img" id="gallery-1">
+                <span class="plus-icon"><i class="fal fa-plus"></i></span>
+            </a>
+            <a href="./imgs/collection/gallery-2.jpg" class="collect-item">
+                <img src="./imgs/collection/gallery-2.jpg" alt="Gallery-2" class="collect-img" id="gallery-2">
+                <span class="plus-icon"><i class="fal fa-plus"></i></span>
+            </a>
+            <a href="./imgs/collection/gallery-3.jpg" class="collect-item">
+                <img src="./imgs/collection/gallery-3.jpg" alt="Gallery-3" class="collect-img" id="gallery-3">
+                <span class="plus-icon"><i class="fal fa-plus"></i></span>
+            </a>
+            <a href="./imgs/collection/gallery-4.jpg" class="collect-item">
+                <img src="./imgs/collection/gallery-4.jpg" alt="Gallery-4" class="collect-img" id="gallery-4">
+                <span class="plus-icon"><i class="fal fa-plus"></i></span>
+            </a>
+        </div>
+
+        <!-- process section -->
+        <div class="process container">
+            <div class="spacer-clearfix" style="height: 100px;"></div>
+            <div class="row">
+                <div class="process-item col-md-12 col-lg-4">
+                    <img src="./imgs/image-box/image-box-1.png" alt="image box">
+                    <div class="text-wrap">
+                        <h5 class="heading">On-Line Puschare</h5>
+                        <p class="main-text">At vero eos et accusamus et iusto odio digniss ducimus qui blanditiis
+                            praesentium volu praesentium
+                        </p>
+                    </div>
+                </div>
+                <div class="process-item col-md-12 col-lg-4">
+                    <img src="./imgs/image-box/image-box-2.png" alt="image box">
+                    <div class="text-wrap">
+                        <h5 class="heading">Free Shipping</h5>
+                        <p class="main-text">At vero eos et accusamus et iusto odio digniss ducimus qui blanditiis
+                            praesentium volu praesentium
+                        </p>
+                    </div>
+                </div>
+                <div class="process-item col-md-12 col-lg-4">
+                    <img src="./imgs/image-box/image-box-3.png" alt="image box">
+                    <div class="text-wrap">
+                        <h5 class="heading">Money Back</h5>
+                        <p class="main-text">At vero eos et accusamus et iusto odio digniss ducimus qui blanditiis
+                            praesentium volu praesentium
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="spacer-clearfix" style="height: 60px;"></div>
+        </div>
+
+        <!-- testimonial section -->
+        <div class="testimonial-section container-fluid" id="testimonial">
+            <div class="spacer-clearfix" style="height: 100px;"></div>
+            <div class="slick-slide-cite container">
+                <div class="slide-content">
+                    <figure class="figure-img"><img src="./imgs/testimonial.png" alt="testimonial"></figure>
+                    <div class="text-wrap">
+                        <div class="infomation">Karla Camila Cabello, Facial Client</div>
+                        <blockquote class="blockquote">
+                            <p> "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa optio
+                                nobis doloribus eaque, a perspiciatis reprehenderit necessitatibus quisquam aperiam
+                                voluptatum."
+                            </p>
+                        </blockquote>
+                        <span class="signature"><img src="./imgs/signature.png" alt="signature"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="spacer-clearfix" style="height: 100px;"></div>
+        </div>
+
+        <!-- day spa packages -->
+        <div class="spa-packages container-fluid">
+            <div class="spacer-clearfix" style="height: 70px;"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="heading col-12">
+                        <h2 class="main-heading section-title">Day Spa Packages</h2>
+                        <div class="sub-heading">
+                            <p>Welcome to the Natuspa Day Med Spa! A wellness luxury spa centerdedicatedto inspiring
+                                Life in
+                                Balance.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="package-box col-lg-4 col-md-6 col-sm-12">
+                        <h2 class="section-title name-price-package">basic package<br><span class="price">$369</span>
+                        </h2>
+                        <ul class="features">
+                            <li class="feature-item">Deep Tissue Massage</li>
+                            <li class="feature-item">Sandy Beach Scrub</li>
+                            <li class="feature-item">Essential Treatment Facial</li>
+                            <li class="feature-item"><del>Spa Manicure & Pedicure</del></li>
+                            <li class="feature-item"><del>Complimentary lunch</del></li>
+                        </ul>
+                        <a class="link-text text-linear-effect purchase-btn">purchase</a>
+                    </div>
+                    <div class="package-box center col-lg-4 col-md-6 col-sm-12">
+                        <h2 class="section-title name-price-package">COUPLE'S PACKAGE<br><span class="price">$595</span>
+                        </h2>
+                        <ul class="features">
+                            <li class="feature-item">Deep Tissue Massage</li>
+                            <li class="feature-item">Sandy Beach Scrub</li>
+                            <li class="feature-item">Essential Treatment Facial</li>
+                            <li class="feature-item">Complimentary lunch</li>
+                            <li class="feature-item"><del>Spa Manicure & Pedicure</del></li>
+                            <li class="feature-item">Epsom Salt float therapy</li>
+                        </ul>
+                        <a class="link-text text-linear-effect purchase-btn">purchase</a>
+                    </div>
+                    <div class="package-box col-lg-4 col-md-6 col-sm-12">
+                        <h2 class="section-title name-price-package">special package<br><span class="price">$769</span>
+                        </h2>
+                        <ul class="features">
+                            <li class="feature-item">Deep Tissue Massage</li>
+                            <li class="feature-item">Sandy Beach Scrub</li>
+                            <li class="feature-item">Essential Treatment Facial</li>
+                            <li class="feature-item">Spa Manicure & Pedicure</li>
+                            <li class="feature-item">Complimentary lunch</li>
+                        </ul>
+                        <a class="link-text text-linear-effect purchase-btn">purchase</a>
+                    </div>
+                </div>
+            </div>
+            <div class="spacer-clearfix" style="height: 80px;"></div>
+        </div>
+
+        <!-- video box and counter section -->
+        <div class="videobox-counter-wrapper container-fluid">
+            <div class="row">
+                <div class="col-md-12 col-lg-6 p-0">
+                    <div class="video-box">
+                        <div class="play-btn">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <iframe src="https://www.youtube.com/embed/zHCyHodIlCY" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen="" class="video-embed">
+                    </iframe>
+                    <span class="close-btn"><i class="fal fa-times"></i></span>
+                </div>
+                <div class="col-md-12 col-lg-6 p-0">
+                    <div class="counter-section">
+                        <div class="heading">
+                            <div class="pre-heading">why choose us</div>
+                            <div class="main-heading">enjoy the<br>difference</div>
+                        </div>
+                        <div class="spacer-clearfix" style="height: 60px;"></div>
+                        <div class="counter">
+                            <div class="counter-item">
+                                <div class="number"><span class="price" id="number-1"></span></div>
+                                <div class="description">
+                                    <h3 class="title">Happy Clients</h3>
+                                    <p class="sub-heading">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                        do eiusmod tempor incididunt facilisis.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="counter-item">
+                                <div class="number"><span class="price" id="number-2"></span></div>
+                                <div class="description">
+                                    <h3 class="title">Treatments</h3>
+                                    <p class="sub-heading">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                        do eiusmod tempor incididunt facilisis.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="counter-item">
+                                <div class="number"><span class="price" id="number-3"></span></div>
+                                <div class="description">
+                                    <h3 class="title">Therapists</h3>
+                                    <p class="sub-heading">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                        do eiusmod tempor incididunt facilisis.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- latest blog -->
+        <div class="latest-blog">
+            <div class="spacer-clearfix" style="height: 80px;"></div>
+            <div class="container-fluid pr-0">
+                <div class="row">
+                    <div class="heading col-md-12">
+                        <div class="section-title">Latest Blog Posts</div>
+                        <div class="sub-heading">
+                            <p>Welcome to the Natuspa Day Med Spa! A wellness luxury spa centerdedicatedto inspiring
+                                Life in
+                                Balance.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="spacer-clearfix" style="height: 62px;"></div>
+                    <div class="main-post col-md-12">
+                        <div class="container">
+                            <div class="post-slider row">
+                                <div class="post-box col-md-12 col-lg-6 pt-0 pb-0">
+                                    <div class="inner">
+                                        <div class="post-img"><img src="./imgs/news/news-3-570x340.jpg" alt=""></div>
+                                        <div class="post-wrapper">
+                                            <div class="post-category">feb 17, 2020</div>
+                                            <a href="#" class="post-title">Take a Little Stress Out<br>of Your Big
+                                                Day</a>
+                                            <div class="post-content">
+                                                <p>Massage is more popular in women than men. The idea of going for a
+                                                    massage
+                                                    conjures
+                                                    up
+                                                    visions of pas and pampering which many men don’t see as being very
+                                                    masculine.
+                                                    Has
+                                                    many
+                                                    benefits for men too...
+                                                </p>
+                                            </div>
+                                            <a class="post-read-more link-text text-linear-effect">read more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="post-box col-md-12 col-lg-6 pt-0 pb-0">
+                                    <div class="inner">
+                                        <div class="post-img"><img src="./imgs/news/news-4-570x340.jpg" alt=""></div>
+                                        <div class="post-wrapper">
+                                            <div class="post-category">feb 16, 2020</div>
+                                            <a href="#" class="post-title">How To Deal With Preventable<br>Waxing
+                                                Mistakes</a>
+                                            <div class="post-content">
+                                                <p>Massage is more popular in women than men. The idea of going for a
+                                                    massage
+                                                    conjures
+                                                    up
+                                                    visions of pas and pampering which many men don’t see as being very
+                                                    masculine.
+                                                    Has
+                                                    many
+                                                    benefits for men too...
+                                                </p>
+                                            </div>
+                                            <a class="post-read-more link-text text-linear-effect">read more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="spacer-clearfix" style="height: 90px;"></div>
+        </div>
+
+        <!-- maps section -->
+        <div class="maps container-fluid" id="maps">
+            <div class="spacer-clearfix" style="height: 80px;"></div>
+            <div class="row">
+                <div class="maps-embed col-md-12 p-0">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.1586172889265!2d106.79692831526064!3d10.87553776032924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d8a1768e1d03%3A0x38d3ea53e0581ae0!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBLaG9hIGjhu41jIFThu7Egbmhpw6puLCBDxqEgc-G7nyBMaW5oIFRydW5nLCBUaOG7pyDEkOG7qWMsIMSQSFFHIFRQSENNLg!5e0!3m2!1svi!2s!4v1581684581250!5m2!1svi!2s"
+                        width="100%" height="570px" frameborder="0" style="border:0;" allowfullscreen="">
+                    </iframe>
+                </div>
+                <div class="maps-contact col-md-12" id="appointments">
+                    <div class="spacer-clearfix" style="height: 80px;"></div>
+                    <div class="inner container">
+                        <div class="row">
+                            <form action="#" class="maps-form col-md-12 col-lg-7">
+                                <div class="row">
+                                    <div class="form-input col-sm-6 your-name">
+                                        <input type="text" name="name" id="name" placeholder="Full Name">
+                                        <div class="error">( <span>*</span> )</div>
+                                    </div>
+                                    <div class="form-input col-sm-6 your-email">
+                                        <input type="text" name="email" id="email" placeholder="E-mail">
+                                        <div class="error">( <span>*</span> )</div>
+                                    </div>
+                                    <div class="form-input col-sm-6 your-phone-number">
+                                        <input type="text" name="phone-number" id="phone-number"
+                                            placeholder="Phone Number">
+                                        <div class="error">( <span>*</span> )</div>
+                                    </div>
+                                    <div class="form-input col-sm-6 your-service">
+                                        <div class="current-option" data-value="0">Type Of Services</div>
+                                        <div class="error">( <span>*</span> )</div>
+                                        <span class="dropdown-icon"><i class="fal fa-chevron-down down"></i></span>
+                                        <ul class="option-menu">
+                                            <li class="option" data-value="0">Type Of Services</li>
+                                            <li class="option" data-value="1">Natural Waxing</li>
+                                            <li class="option" data-value="1">Signature Massage</li>
+                                            <li class="option" data-value="1">Natural Nails Care</li>
+                                            <li class="option" data-value="1">Body Treatments</li>
+                                            <li class="option" data-value="1">Derm Young Facial</li>
+                                        </ul>
+                                    </div>
+                                    <textarea name="your-message" id="yourMessage"
+                                        placeholder="Your Message"></textarea>
+                                    <div class="form-input col-12 submit-btn">
+                                        <input value="contact us" id="appointment-submit" name="submit"
+                                            class="btn book-now-btn" disabled="disabled" style="opacity: 1;">
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="contact-wrapper  col-md-12 col-lg-5">
+                                <div class="contact">
+                                    <div class="contact-popup-info">
+                                        <h2 class="section-title">New york office</h2>
+                                        <div class="address">
+                                            <span>145 Franklin St, Redpoint Eval</span>
+                                        </div>
+                                        <div class="email">
+                                            <span>Natuspa@email-themes.com</span>
+                                        </div>
+                                        <div class="phone">
+                                            <span>+84 933 1235 113</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="contact">
+                                    <div class="contact-popup-info">
+                                        <h2 class="section-title">Paris office</h2>
+                                        <div class="address">
+                                            <span>138 rue du Roi de Sicile Paris</span>
+                                        </div>
+                                        <div class="email">
+                                            <span>Natuspa@email-themes.com</span>
+                                        </div>
+                                        <div class="phone">
+                                            <span>+ 88 686 364 730</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer id="footer">
+        <div class="footer-content">
+            <a href="index.html"><img src="./imgs/footer-logo-white.png" alt="footer-logo"></a>
+            <div class="sub-heading">Design by @CBR-Themes</div>
+            <div class="slogan">Pro inimicus sapientem an, ad cibo velit.</div>
+            <ul class="footer-social">
+                <li class="social-media" style="background-color: #4b64a6;">
+                    <a class="social-popup-icon" target="_blank" href="https://fb.com/Tuannguyentn2504">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </li>
+                <li class="social-media" style="background-color: #0cace4;">
+                    <a class="social-popup-icon" target="_blank" href="#">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li class="social-media" style="background-color: #f12756;">
+                    <a class="social-popup-icon" target="_blank" href="#">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-bottom">Copyright © 2019. Natuspa. All Rights Reserved.</div>
+    </footer>
+
+    <!-- modal dialog box popup -->
+    <div class="modal-dialog-box" style="display: none;">
+        <div class="inner">
+            <div class="dialog-img"><img src="./imgs/popup-img.jpg" alt="Dialog Img" style="height: 410px;"></div>
+            <span class="close-icon"><i class="fal fa-times"></i></span>
+            <div class="content">
+                <h5 class="pre-heading">Get Our Most</h5>
+                <h3 class="heading">Exclusive Offers</h3>
+                <p class="sub-heading">Get up to 60% Extra Off Your First Deal Use code WELCOME at checkout for 20%
+                    Extra
+                    Off Local & Getaways, or 10% Extra Off Goods.
+                </p>
+                <form action="#">
+                    <input type="text" placeholder="Your E-mail">
+                    <button class="btn book-now-btn">Subcriber</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="./vendor/js/jquery-v3.4.1.min.js"></script>
+    <script src="./vendor/js/bootstrap.min.js"></script>
+    <script src="./vendor/js/jquery.waypoints.min.js"></script>
+    <!-- <script src="https://kit.fontawesome.com/7534282567.js" crossorigin="anonymous"></script> -->
+    <script src="./vendor/js/slick/slick.min.js"></script>
+    <!-- <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
+    <script src="./vendor/js/datetimepicker-master/build/jquery.datetimepicker.full.js"></script>
+    <script src="./vendor/js/Magnific-Popup-master/jquery.magnific-popup.min.js"></script>
+    <!-- <script src="./resource/js/script.js"></script> -->
+    <script src="./resource/js/home-two.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gift Exchange</title>
+	<style type="text/css">
+		.container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-top: 50px;
+		}
+		.gift {
+			width: 100px;
+			height: 100px;
+			background-image: url('https://image.flaticon.com/icons/svg/2923/2923600.svg');
+			background-size: cover;
+			background-repeat: no-repeat;
+			transition: transform 0.5s ease-in-out;
+		}
+		.gift:hover {
+			transform: rotateY(180deg);
+		}
+		.gift-container {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			margin: 20px;
+		}
+		.arrow {
+			width: 50px;
+			height: 50px;
+			background-image: url('https://image.flaticon.com/icons/svg/1632/1632602.svg');
+			background-size: cover;
+			background-repeat: no-repeat;
+			transition: transform 0.5s ease-in-out;
+			cursor: pointer;
+		}
+		.arrow:hover {
+			transform: scale(1.2);
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="gift-container">
+			<div class="gift"></div>
+			<div class="arrow"></div>
+			<div class="gift"></div>
+		</div>
+		<div class="gift-container">
+			<div class="gift"></div>
+			<div class="arrow"></div>
+			<div class="gift"></div>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		const arrows = document.querySelectorAll('.arrow');
+
+		arrows.forEach((arrow, index) => {
+			const giftContainers = arrow.parentNode.childNodes;
+			const giftLeft = giftContainers[1];
+			const giftRight = giftContainers[3];
+			const delay = 500 * index;
+
+			arrow.addEventListener('click', () => {
+				giftLeft.classList.toggle('animate');
+				giftRight.classList.toggle('animate');
+			});
+
+			setTimeout(() => {
+				arrow.classList.add('animate');
+			}, delay);
+		});
+	</script>
+</body>
+</html>

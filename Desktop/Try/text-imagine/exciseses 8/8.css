@@ -1,0 +1,95 @@
+p{
+    font-size: 20px;
+    margin-left: 12px;
+}
+.red-square {
+    background-color: red;
+    width: 100px;
+    height: 20px;
+    margin-bottom: 7px;
+  }
+.green-circle{
+    background-color: green;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    margin-bottom: 7px;
+}
+.a{
+    display: block;
+    margin-bottom: 5px;
+}
+.b{
+    width: 250px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.e{
+    border: none;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 16px;
+    padding-right: 16px;
+    font-size: 16px;
+    width: 500px;
+    border-radius: 30px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+        
+}
+.GitHup-button{
+    color: white;
+    font-size: 16px;
+    background-color: rgb(46, 164, 79);
+    border: none;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 24px;
+    padding-right: 24px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+    word-wrap: break-word;
+    display: block;
+    width: 360px;
+}
+.GitHup-button:hover{
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.14);
+}
+.name{
+    vertical-align: center;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(200, 200, 200);
+    width: 148px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 6px;
+    border-radius: 7px;
+}
+.email{
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(200, 200, 200);
+    width: 115px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 120px;
+    padding-right: 120px;
+    border-radius: 7px;
+    display: block;
+}
+.text{
+    color: brown;
+    vertical-align: middle;
+    margin-top: 20px;
+}
+.gg {
+    display: block;
+    width: 200px;
+    margin-left: 150px;
+    margin-bottom: 10px;
+}

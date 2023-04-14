@@ -1,0 +1,58 @@
+.eleven-a{
+    display: grid;
+    grid-template-columns: 125px 75px;
+}
+.eleven-b{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 50px 1fr 75px;
+}
+.eleven-c{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 10px;
+    margin-bottom: 50px;
+}
+.eleven-d-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+}
+.div-info{
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+.cat-picture{
+    width: 100%;
+    height: 300px;
+}
+.name{
+    margin-top: 0;
+    margin-left: 8px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.mutual-friends-row{
+    display: grid;
+    grid-template-columns: 35px 1fr;
+    margin-left: 8px;
+}
+.mutual-friend-picture{
+    width: 100%;
+    border-radius: 50%;
+    vertical-align: center;
+}
+.cat-mutual{
+    color: grey;
+}
+.add-friend-button{
+    margin-left: 8px;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    background-color:  rgb(24, 119, 242);
+    border-radius: 5px;
+    padding-left: 8px;
+    border: none;
+}
